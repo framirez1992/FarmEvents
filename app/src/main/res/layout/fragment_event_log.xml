@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".EventLogFragment">
+
+<LinearLayout android:id="@+id/llList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <include layout="@layout/module_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <include layout="@layout/current_area"/>
+
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="right"
+           android:paddingRight="30dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/date"/>
+
+           <EditText android:id="@+id/etDate"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:inputType="date"
+               android:imeOptions="actionNext"
+               android:selectAllOnFocus="true"
+               android:gravity="center"
+               android:enabled="false"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"/>
+
+            <EditText android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:hint="@string/description"
+                android:imeOptions="normal"/>
+        </LinearLayout>
+
+        <ImageView android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button android:id="@+id/btnSave"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

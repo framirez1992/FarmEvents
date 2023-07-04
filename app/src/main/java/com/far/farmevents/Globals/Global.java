@@ -1,0 +1,5 @@
+package com.far.farmevents.Globals;
+
+public class Global {
+    public static enum MODULES{DAILY_NEWS,CONTROLLED_ENVIROMENT, DISTRIBUTION,WAREHOUSE_REQUEST, EVENT_LOG, EGG_PRODUCTION, OUTPUT_SUMMARY, CHECK_LIST}
+}
