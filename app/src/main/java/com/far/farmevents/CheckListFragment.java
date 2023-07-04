@@ -35,6 +35,7 @@ import java.util.ArrayList;
  */
 public class CheckListFragment extends Fragment implements IListListener {
 
+
     MainActivity mainActivity;
     ModuleArea moduleArea;
     RecyclerView rv;
